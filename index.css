@@ -1,0 +1,227 @@
+:root {
+    --card_size: 210px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif', serif;
+    color: beige;
+    background: url(assets/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    margin-left: 10px;
+}
+
+/***** HEADER *****/
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    letter-spacing: 0.3rem;
+}
+
+.ace > img {
+    width: 35px;
+    transform: rotate(-15deg);
+    margin-left: 15px;
+}
+
+.ace > img:hover {
+    transform: rotate(15deg);
+    transition-duration: 300ms;
+}
+
+/***** CONTAINER *****/
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+/***** BUTTONS *****/
+
+button {
+    font-family: 'Noto Serif', serif;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    background-color: #f8e91f;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    background-color: darkgray;
+    opacity: 0.5;
+}
+
+button:enabled:hover {
+    transform: scale(1.1,1.1);
+    transition-duration: 300ms;
+}
+
+button#new-deck {
+    margin-top: 25px;
+}
+
+/***** RULES *****/
+
+.hand-rules {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 120px;
+    cursor: pointer;
+}
+
+.hand-rules:hover {
+    transform: rotate(5deg);
+    transition-duration: 300ms;
+}
+
+.modal_rules {
+    position: absolute;
+    width: 300px;
+    bottom: 20px;
+    left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: left;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(32, 32, 32, 0.95);
+    visibility: hidden;
+}
+
+.modal_rules > ul > li {
+    margin-bottom: 10px;
+}
+
+.modal_rules > p {
+    font-size: 17px;
+}
+
+.material-icons {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+/***** CARDS *****/
+
+div#card-slot1,
+div#card-slot2 {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0 auto;
+    height: var(--card_size);
+    width: calc(var(--card_size) * 5 / 7);
+}
+
+div#card-slot1 {
+    margin-bottom: 25px;
+}
+
+img.card {
+    width: 100%;
+    height: 100%;
+}
+
+.col2 > h3 {
+    margin-bottom: 10px;
+}
+
+.col2 > h3:last-of-type {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/***** WINNER *****/
+
+.col2 {
+    position: relative;
+}
+
+.winner {
+    width: 20%;
+    min-width: 250px;
+    height: 80px;
+    line-height: 80px;
+
+    position: absolute;
+    bottom: 50vh;
+    left: 50vw;
+    transform: translate(-50%);
+
+    background: hsla(340, 80%, 69%, 1);
+    background: linear-gradient(90deg, hsla(340, 80%, 69%, 1) 0%, hsla(15, 93%, 71%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(340, 80%, 69%, 1) 0%, hsla(15, 93%, 71%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(340, 80%, 69%, 1) 0%, hsla(15, 93%, 71%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#EF709B", endColorstr="#FA9372", GradientType=1 );
+
+    border: 10px solid rgba(245, 245, 220, 0.5);
+    border-radius: 3px;
+    color: #202020;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    visibility: hidden;
+}
+
+/***** CREDITS *****/
+
+.col3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+footer.credits {
+    font-family: serif;
+    color: #D6D6D6;
+    letter-spacing: 0.1em;
+    font-size: 1em;
+}
+
+footer.credits a {
+    text-decoration: none;
+    color: #FDC0AF;
+}
+
+footer.credits a:hover {
+    color: #f7c78d;
+    text-shadow: 0.7px 0.7px 1.5px #f7c78d;
+}
+
+.social-medias > a > img {
+    padding: 15px;
+    width: 40px;
+}
+
+.social-medias > a > img:last-child {
+    padding-right: 0;
+}
+
+.social-medias > a > img:hover {
+    transform: scale(1.1,1.1);
+    transition-duration: 300ms;
+}
+
+/***** ACTIVE MODAL *****/
+
+.active {
+    visibility: visible; 
+}

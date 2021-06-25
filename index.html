@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Game of War</title>
+</head>
+<body>
+
+    <div class="header"> <!-- HEADER -->
+
+        <h1>Game of War</h1>
+
+        <div class="ace">
+            <img src="assets/ace.png">
+        </div>
+
+    </div>
+
+    <div class="container"> <!-- CONTAINER -->
+
+        <div class="col1"> <!-- COL 1 -->
+
+            <button id="new-deck">New Deck</button>
+
+            <p id="remainingCards"></p>
+
+            <div id="rules">
+                <img class="hand-rules" src="assets/rules.png">
+            </div>
+
+        </div>
+
+
+        <div class="col2"> <!-- COL 2 -->
+
+            <h3 id="score-comp">Computer score: 0</h3>
+            <div id="cards">
+                <div id="card-slot1">
+                    <!-- <CARD IMAGE HERE> -->
+                </div>
+
+                <div id="card-slot2">
+                    <!-- <CARD IMAGE HERE> -->
+                </div>
+            </div>
+            <h3 id="score-my">Your score: 0</h3>
+
+            <button disabled id="draw-cards">Draw</button>
+
+        </div>
+
+        <div class="col3"> <!-- COL 3 -->
+
+            <footer class="credits"> <!-- footer -->
+                By <a href="https://github.com/FernandaRicciardi" target="_blank" rel="noopener">Fernanda Ricciardi</a>
+                
+                <div class="social-medias">
+                    <a href="https://github.com/FernandaRicciardi/game-of-war" target="_blank" rel="noopener">
+                        <img src="assets/github.png">
+                    </a>
+    
+                    <a href="https://www.linkedin.com/in/fernanda-ricciardi/" target="_blank" rel="noopener">
+                        <img src="assets/linkedin.png">
+                    </a>
+    
+                    <a href = "mailto: fernanda.ricciardi@gmail.com">
+                        <img src="assets/email.png">
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <div class="modal_rules">
+        <span id="close-icon" class="material-icons md-18">cancel</span>
+        <p>This is only an alternative way of playing "War":</p>
+        <ul>
+            <li>2 Players</li>
+            <li>standard 52-card deck</li>
+            <li>the cards have the normal rank from highest to lowest (ace, king, queen, jack, and then 10 through 2)</li>
+            <li>each player turns up a card at the same time</li>
+            <li>whoever turns over the highest card scores the card value</li>
+            <li>if the two cards played are of equal value, then there is a "war" and no one scores</li>
+            <li>the game ends when there are no more remaining cards</li>
+            <li>the player with the highest score wins</li>
+        </ul>                    
+    </div>
+    
+    <div class="winner"> <!-- WINNER HERE --> </div>
+
+<script src="index.js"></script>
+</body>
+</html>
