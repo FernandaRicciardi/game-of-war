@@ -207,12 +207,8 @@ footer.credits a:hover {
 }
 
 .social-medias > a > img {
-    padding: 15px;
+    padding: 12px;
     width: 40px;
-}
-
-.social-medias > a > img:last-child {
-    padding-right: 0;
 }
 
 .social-medias > a > img:hover {
