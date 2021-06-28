@@ -31,11 +31,11 @@ h1 {
     width: 35px;
     transform: rotate(-15deg);
     margin-left: 15px;
+    transition-duration: 300ms;
 }
 
 .ace > img:hover {
     transform: rotate(15deg);
-    transition-duration: 300ms;
 }
 
 /***** CONTAINER *****/
@@ -59,6 +59,7 @@ button {
     padding: 10px;
     border-radius: 5px;
     border: none;
+    transition-duration: 300ms;
 }
 
 button:disabled {
@@ -69,7 +70,6 @@ button:disabled {
 
 button:enabled:hover {
     transform: scale(1.1,1.1);
-    transition-duration: 300ms;
 }
 
 button#new-deck {
@@ -84,11 +84,11 @@ button#new-deck {
     bottom: 0;
     width: 120px;
     cursor: pointer;
+    transition-duration: 300ms;
 }
 
 .hand-rules:hover {
     transform: rotate(5deg);
-    transition-duration: 300ms;
 }
 
 .modal_rules {
@@ -209,11 +209,11 @@ footer.credits a:hover {
 .social-medias > a > img {
     padding: 12px;
     width: 40px;
+    transition-duration: 300ms;
 }
 
 .social-medias > a > img:hover {
     transform: scale(1.1,1.1);
-    transition-duration: 300ms;
 }
 
 /***** ACTIVE MODAL *****/
